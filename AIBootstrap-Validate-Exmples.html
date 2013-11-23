@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+   
+<!--    Use "validate required" in the class.  Add field name in the "data-message" attribute-->
+ <div><strong>Permit Number</strong></div>
+                  <div class="control-group">
+                  <div class="controls">
+                  <div class="errortext"></div> 
+          <input type="text" id="PermitNumber" name="PermitNumber" class="span8 validate required" data-message="Permit Number" />
+                    </div>
+              </div> 
+</body>
+</html>
+
+
+<!--Validate Match
+Add 'Validate match' to the class and 'data-matchcontrol' attribute with the name of the control to compare values. Add data-message attibute with the control name-->
+<div class="control-group">
+                  <div class="controls">
+                      Enter your new password:
+                  <div class="errortext"></div>
+                        <input class="span4 validate required length match" data-matchcontrol="Password2" data-length="7" id="Password" name="Password" type="password"  data-message="Password"/>
+                    </div>
+              </div> 
+                  <div class="control-group">
+                  <div class="controls">
+                      Verify your new password:
+                      <div class="errortext"></div>
+                        <input class="span4" id="Password2" name="Password2" type="password"  placeholder="Password"/>
+                    </div>
+              </div> 
+
+<!--Lenth Values - Used to validate if a control can have multiple lengths that are valid.  Example: The filed can either be 6 characters long or 9 character
+Add 'validate lengthvalues' to the class.  Add 'data-lengtharray' with the accepted valued seperated by a comma.  Add data-message with the name of the control.-->
+
+            <div><strong>Owner</strong></div>
+                  <div class="control-group">
+                  <div class="controls">
+                  <div class="errortext"></div>
+          
+            <input type="text"  id="Owner" name="Owner"  class="span8 validate required lengthvalues" data-lenghtarray="6,9" data-message="Owner" />
+                    </div>
+              </div> 
